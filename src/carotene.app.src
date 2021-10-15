@@ -7,8 +7,6 @@
                   kernel,
                   stdlib,
                   cowboy,
-                  rabbit_common,
-                  amqp_client,
                   jsx,
                   uuid,
                   asn1,

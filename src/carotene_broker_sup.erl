@@ -34,9 +34,7 @@ init([]) ->
 
 read_broker_config() ->
     case application:get_env(carotene, broker) of
-        undefined -> undefined;
-        {ok, rabbitmq} -> rabbitmq_broker;
-        {ok, redis} -> redis_broker
+        undefined -> undefined
     end.
 
 get_broker() ->

@@ -30,8 +30,6 @@ stop() ->
     application:stop(cowlib),
     application:stop(crypto),
     application:stop(cowboy),
-    application:stop(rabbit_common),
-    application:stop(amqp_client),
     application:stop(inets),
     application:stop(carotene),
     ok.
@@ -41,8 +39,6 @@ start() ->
     application:start(crypto),
     application:start(cowlib),
     application:start(cowboy),
-    application:start(rabbit_common),
-    application:start(amqp_client),
     application:start(inets),
     application:start(carotene).
 
